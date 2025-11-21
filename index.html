@@ -3,96 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>電気電子工学科</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(120deg, #4f87ff, #6ac8ff);
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-      color: #fff;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 1.8rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.6rem;
-      border-left: 6px solid #4f87ff;
-      padding-left: 0.6rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1.8rem 0;
-      color: #777;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #4f87ff;
-      text-decoration: none;
-      font-weight: 600;
-    }
-  </style>
+  <title>My GitHub Pages Site</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="hero">
     <h1>Welcome to My GitHub Page</h1>
     <p>電気電子・半導体系学生のポートフォリオ兼ブログ</p>
+
+    <nav class="topnav" aria-label="Site navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <div class="container">
-    <div class="card">
-      <h2>About Me</h2>
+  <main class="container">
+    <section class="card">
+      <h2>こんにちは</h2>
       <p>
-        電気電子工学・半導体デバイスに取り組む大学生です。<br />
-        研究・プログラミング・英語学習・投資など幅広く挑戦中。
+        半導体デバイス／回路／プログラミングを軸に学習・研究しています。<br>
+        このサイトでは、研究メモ・作ったもの・学びの記録をまとめます。
       </p>
-    </div>
+      <div class="badges">
+        <span class="badge">Semiconductor</span>
+        <span class="badge">Device Modeling</span>
+        <span class="badge">Electronics</span>
+        <span class="badge">Python / Web</span>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>Projects</h2>
-      <ul>
-        <li>● MOSFET特性解析ツール（Python）</li>
-        <li>● AI × 半導体デバイスモデリング</li>
-        <li>● Raspberry Pi 自作音声アシスタント</li>
+    <section class="grid-2">
+      <div class="card">
+        <h2>最近やってること</h2>
+        <ul class="list">
+          <li>半導体デバイスの特性解析／モデリング</li>
+          <li>回路設計・電磁波・確率過程などの勉強</li>
+          <li>Raspberry Pi 音声アシスタント開発</li>
+          <li>英語学習（C1→C2）</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>このサイトの使い方</h2>
+        <p>
+          まずは <a href="projects.html">Projects</a> を見てみてください。<br>
+          学習ログやメモは今後ここに追加していきます。
+        </p>
+        <p style="margin-top:.8rem;">
+          <a class="btn" href="about.html">自己紹介を見る →</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>更新ログ</h2>
+      <ul class="list">
+        <li><strong>2025-11-21</strong> サイト公開（Home / About / Projects / Contact）</li>
+        <li><small class="muted">※ここに今後どんどん足していく想定</small></li>
       </ul>
-    </div>
-
-    <div class="card">
-      <h2>Contact</h2>
-      <p>GitHub: <a href="#">@yourname</a></p>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <footer>
     © 2025 My GitHub Pages Site
   </footer>
 </body>
 </html>
-
-
-
