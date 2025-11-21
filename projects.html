@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | My GitHub Pages Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Projects</h1>
+    <p>作ったもの / 研究メモ / 開発ログ</p>
+
+    <nav class="topnav" aria-label="Site navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card project">
+      <div class="project-title">
+        <h3>MOSFET 特性解析ツール（Python）</h3>
+        <span class="project-meta">Device / Modeling</span>
+      </div>
+      <p>
+        I-V / C-V 特性の読み込み → 可視化 → 主要パラメータ抽出まで自動化するツール。<br>
+        極力ワンクリックで研究の反復速度を上げるのが目的。
+      </p>
+      <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">Parameter Extraction</span>
+        <span class="badge">Automation</span>
+      </div>
+      <hr class="sep">
+      <p><small class="muted">Repo: あとでここにGitHubリンクを貼る</small></p>
+    </section>
+
+    <section class="card project">
+      <div class="project-title">
+        <h3>AI × 半導体デバイスモデリング</h3>
+        <span class="project-meta">Research / ML</span>
+      </div>
+      <p>
+        測定データからモデルパラメータを推定する過程にAIを組み込み、<br>
+        解析を高速化しつつ再現性を上げる取り組み。
+      </p>
+      <div class="badges">
+        <span class="badge">Machine Learning</span>
+        <span class="badge">Semiconductor</span>
+        <span class="badge">Model Fitting</span>
+      </div>
+    </section>
+
+    <section class="card project">
+      <div class="project-title">
+        <h3>Raspberry Pi 自作音声アシスタント</h3>
+        <span class="project-meta">IoT / Voice</span>
+      </div>
+      <p>
+        電源ONから常時会話できる音声アシスタントを自作中。<br>
+        Wake word / 音声認識 / TTS / 簡易UIまで一体化させる予定。
+      </p>
+      <div class="badges">
+        <span class="badge">Raspberry Pi</span>
+        <span class="badge">Speech</span>
+        <span class="badge">Embedded</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>今後追加したいこと</h2>
+      <ul class="list">
+        <li>研究ノートの公開（図付き）</li>
+        <li>デバイス / 回路 / 電磁波の学習まとめ</li>
+        <li>英語学習ログ（TOEIC/IELTS）</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 My GitHub Pages Site
+  </footer>
+</body>
+</html>
